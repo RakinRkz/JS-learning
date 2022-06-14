@@ -687,3 +687,180 @@ function abTest(a, b) {
 
 abTest(2,2);
 
+let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  if (card == 2 || card == 3 || card == 4 || card == 5 || card == 6)
+  count ++;
+  else if(card == 10 || card == 'J' || card == 'Q' || card == 'K' || card == 'A')
+  count --;
+
+  return count > 0 ? count + " Bet" : count + " Hold";
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+const myDog = {
+  // Only change code below this line
+  "name": "doggo",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["rackoon"]
+  // Only change code above this line
+};
+
+// Setup
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+// Only change code below this line
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;    // Change this line
+
+// Setup
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+const entreeValue = testObj['an entree'];   // Change this line
+const drinkValue = testObj['the drink'];    // Change this line
+
+// Setup
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObj[playerNumber];   // Change this line
+
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+myDog.name = "Happy Coder";
+
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "woof";
+
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line
+delete myDog.tails;
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  const lookup = {
+    "alpha":"Adams",
+    "bravo":"Boston",
+    "charlie": "Chicago",
+    "delta":"Denver",
+    "echo":"Easy",
+    "foxtrot":"Frank"
+  }
+  result = lookup[val];
+
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+
+function checkObj(obj, checkProp) {
+  // Only change code below this line\
+  if(obj.hasOwnProperty(checkProp))
+    return obj[checkProp];
+  else
+  return "Not Found";
+  // Only change code above this line
+}
+
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+    "artist": "kosu",
+    "title": "kosto jibone",
+    "release_year": 2019,
+    "formats":[
+      "youtube",
+      "spotify"
+    ]
+  }
+];
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];
+
